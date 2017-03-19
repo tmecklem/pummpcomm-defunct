@@ -11,10 +11,11 @@ defmodule Pummpcomm.Mixfile do
   end
 
   def application do
-    [applications: [:logger, :nerves_uart]]
+    [applications: [:logger, :nerves_uart, :timex]]
   end
 
   defp deps do
-    [{:nerves_uart, "~> 0.1.1"}]
+    [{:nerves_uart, "~> 0.1.1"},
+     {:timex, "~> 3.0"}]
   end
 end
